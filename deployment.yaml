@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: explore-california-deployment
+  name: explore-california-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: explore-california-deployment
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: explore-california-deployment
+    spec:
+      containers:
+      - image: muralidharan1993/murali_demo
+        name: none
+        resources: {}
+status: {}
