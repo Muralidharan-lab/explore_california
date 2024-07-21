@@ -31,7 +31,8 @@ Acceptance Criteria:
   - Document the process and decisions made with a README.md file in your git repo.
 ____________________________________________________________________________________________________________________________________________________________________________________________
 Architecture Diagram:
- ![image](https://github.com/user-attachments/assets/a85affe6-da09-4baf-bf2d-e1798cf295f5)
+![image](https://github.com/user-attachments/assets/c902614a-dbd0-4a58-997d-bc781cde1d4b)
+
 
 1. Sample web app:
   - Fork the [Explore California repository](https://github.com/mickeyjohn/explore_california) and clone it local
@@ -103,11 +104,13 @@ Deployment.yaml  file:
 
 Cmds to apply both: kubectl apply -f deployment.yaml && kubectl apply -f service.yaml
 
-Verify the status of the pod: kubectl get pods
-![image](https://github.com/user-attachments/assets/9dcfe270-485e-4789-96ee-d900f477431c)
+Verify the status of the pod: kubectl get pods -n explore-california
+![image](https://github.com/user-attachments/assets/750524cc-6a40-4f78-9d3b-67698d820d9c)
+
  
-Check the service : kubectl get svc
- ![image](https://github.com/user-attachments/assets/0cdfb307-ba1a-4f49-a003-301a9de3e8e8)
+Check the service : kubectl get svc -n explore-california
+
+![image](https://github.com/user-attachments/assets/809128cd-ad55-4a68-a3fb-9aedf2109bf8)
 
 Login to pod: kubectl exec -it explore-california-deployment-6c8f7f6bfc-chqff – sh
 
@@ -117,11 +120,11 @@ Working inside the pod:
 5. Exposing the App:
 
 NodePort service was configured to expose the application:
-
- ![image](https://github.com/user-attachments/assets/ab6707ae-95da-4efd-97e3-2f03944bb1ba)
-
-In  Browser:  http://localhost:30382
-![image](https://github.com/user-attachments/assets/e626a163-b2cb-4935-9af0-efb65a1cf74f) 
+ ![image](https://github.com/user-attachments/assets/809128cd-ad55-4a68-a3fb-9aedf2109bf8)
+ 
+In  Browser:  http://localhost:30422
+![image](https://github.com/user-attachments/assets/dd1b2d58-4a08-4d4a-88a3-0d10a4096d6a)
+ 
 
  
 
