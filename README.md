@@ -31,7 +31,7 @@ Acceptance Criteria:
   - Document the process and decisions made with a README.md file in your git repo.
 ____________________________________________________________________________________________________________________________________________________________________________________________
 Architecture Diagram:
-![image](https://github.com/user-attachments/assets/c902614a-dbd0-4a58-997d-bc781cde1d4b)
+![image](https://github.com/user-attachments/assets/dda6f4e4-b62b-444e-9403-d01a5e791060)
 
 
 1. Sample web app:
