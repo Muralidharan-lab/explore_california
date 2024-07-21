@@ -93,10 +93,11 @@ Working status check:
 Create files for deployment and service.
 
 Deployment.yaml  file:
-![image](https://github.com/user-attachments/assets/1660c16e-dc14-4520-b49e-2a3021f76ea1)
+![image](https://github.com/user-attachments/assets/fd19b8bf-47d5-4094-8ea2-229bbb77cf06)
+
 
  Service.yaml file:
-![image](https://github.com/user-attachments/assets/66e78db7-523a-4577-9bcc-dbc915ad0324)
+![image](https://github.com/user-attachments/assets/181068de-4228-4c71-b9c3-58f143b844cc)
 
   - Deploy the app on Kubernetes
 
