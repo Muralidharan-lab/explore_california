@@ -5,6 +5,7 @@ metadata:
   labels:
     app: explore-california-deployment
   name: explore-california-deployment
+  namespace: explore-california
 spec:
   replicas: 1
   selector:
@@ -19,6 +20,7 @@ spec:
     spec:
       containers:
       - image: muralidharan1993/murali_demo
-        name: none
+        name:  explore-california-deployment
         resources: {}
 status: {}
+            
