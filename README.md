@@ -134,7 +134,8 @@ ________________________________________________________________________________
  Option: 2 - ingress-nginx
  ___________________________________________________________________________________________________________________________
 Architecture diagram:
-![image](https://github.com/user-attachments/assets/00cbebe2-b96d-4046-ba6a-cf487aaab36d)
+![image](https://github.com/user-attachments/assets/23a6f3db-646c-46dc-b5d1-33c17f9ff93d)
+
 
 
 1.Install NGINX Ingress Controller using Helm
