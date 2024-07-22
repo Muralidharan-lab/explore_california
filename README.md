@@ -130,3 +130,31 @@ In  Browser:  http://localhost:30422
 
 Why NodePort service:
  •   exposes the Service on a specific port of each node in the cluster. It is useful for development and testing environments where you want to access the Service externally but don't need a full load balancer setup. Each node will listen on the specified NodePort, and traffic will be forwarded to the Service.
+____________________________________________________________________________________________________________________________
+ Option: 2 - ingress-nginx
+ ___________________________________________________________________________________________________________________________
+Architecture diagram:
+![image](https://github.com/user-attachments/assets/00cbebe2-b96d-4046-ba6a-cf487aaab36d)
+
+
+1.Install NGINX Ingress Controller using Helm
+Cmds:
+helm repo add ingress-nginx https://kubernetes.github.io/ingress-nginx
+helm repo update
+helm install nginx-ingress ingress-nginx/ingress-nginx
+
+verify: kubectl get pods -n ingress-nginx
+
+![image](https://github.com/user-attachments/assets/8de197ab-f763-4d1b-acb3-1a7ea6bdca8d)
+
+Create ingress:
+![image](https://github.com/user-attachments/assets/36f9ba6d-5747-4040-808a-cf58d5739f50)
+
+kubectl get ingress -n explore-california:
+![image](https://github.com/user-attachments/assets/e76a10f4-438b-4691-b9d7-9d403015e028)
+
+Check in Browser: localhost/app/
+![image](https://github.com/user-attachments/assets/591e5e8e-76e8-475d-80c9-d4b595338095)
+
+why ingress controller:
+An Ingress controller in Kubernetes acts as a traffic manager for HTTP and HTTPS traffic coming into the cluster. It enables you to route external requests to different services based on the request host or path. 
